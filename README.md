@@ -3,7 +3,7 @@
 Python tools for Altium Designer schematic files: `.SchDoc` (schematic sheets) and `.SchLib` (schematic libraries). This is a side tool for a project. The app itself reads and writes SchDoc in C++ (`src/SchDocExport.cpp`, `src/SchDocImport.cpp`); these scripts are for looking at files, checking the app's output and exploring the format.
 
 ```bash
-pip install -r tools/asch/requirements.txt
+pip install -r requirements.txt
 ```
 
 | Script | What it does |
@@ -19,10 +19,10 @@ pip install -r tools/asch/requirements.txt
 python asch_render.py Main.SchDoc                          # Main.pdf
 python asch_render.py Main.SchDoc out.png --scale 3
 python asch_render.py Main.SchDoc dark.pdf --theme kicanvas
-python asch_render.py "SampleLib.SchLib"                   # 7seg(LED).pdf, a page per component
+python asch_render.py "SampleLib.SchLib"                   # SampleLib.pdf, a page per component
 python asch_render.py "SampleLib.SchLib" images/           # a PNG per component
 python asch_render.py "SampleLib.SchLib" --list
-python asch_render.py "SampleLib.SchLib" a.png --component 7SEG_1DIGIT_CA_0.3INCH --scale 4
+python asch_render.py "SampleLib.SchLib" a.png --component SAMPLE_PART --scale 4
 ```
 
 Themes: `altium` (the file's own colours, default), `kicad`, `kicanvas`, `nord`, `solarized-light`,
