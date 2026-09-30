@@ -1,0 +1,5 @@
+# Altium schematic tools in this folder (asch_render.py, asch_netlist.py):
+#   pip install -r tools/asch/requirements.txt
+olefile>=0.46     # reading .SchDoc / .SchLib (OLE compound file) streams
+pillow>=10.1      # PNG output, embedded images
+reportlab>=4.0    # PDF output (vector)
